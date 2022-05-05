@@ -15,7 +15,7 @@ function App() {
       </h1>
       <AuthContextProvider>
         <Routes>
-          <Route path="/" element={<Signin />} />
+          <Route path="firebase-auth" element={<Signin />} />
           <Route path="signup" element={<Signup />} />
           <Route
             path="account"

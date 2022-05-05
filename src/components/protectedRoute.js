@@ -5,7 +5,7 @@ const protectedRoute = ({ children }) => {
   const { user } = UserAuth();
 
   if (!user) {
-    return <Navigate to="/" />;
+    return <Navigate to="/firebase-auth" />;
   }
   return children;
 };
