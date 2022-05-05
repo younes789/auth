@@ -1,3 +1,4 @@
+import React from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Signin from "./components/Signin";
@@ -14,7 +15,7 @@ function App() {
       </h1>
       <AuthContextProvider>
         <Routes>
-          <Route path="/" element={<Signin />} />
+          <Route path="firebase-auth" element={<Signin />} />
           <Route path="signup" element={<Signup />} />
           <Route
             path="account"
