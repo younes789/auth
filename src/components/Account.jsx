@@ -8,7 +8,7 @@ const Account = () => {
   const handleLogout = async () => {
     try {
       await logout();
-      navigate("/firebase-auth");
+      navigate("/auth");
       console.log("You are logged out");
     } catch (e) {
       console.log(e.message);
