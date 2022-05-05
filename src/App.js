@@ -6,17 +6,16 @@ import Signup from "./components/Signup";
 import Account from "./components/Account";
 import { AuthContextProvider } from "./context/AuthContext";
 import ProtectedRoute from "./components/protectedRoute";
+import Home from "./components/Home";
 
 function App() {
   return (
     <div>
-      <h1 className="text-center text-3xl font-bold">
-        <fieldset>Firebase Auth</fieldset>
-      </h1>
       <AuthContextProvider>
+        <Home/>
         <Routes>
-          <Route path="auth" element={<Signin />} />
-          <Route path="signup" element={<Signup />} />
+          <Route path="/signin" element={<Signin />} />
+          <Route path="/signup" element={<Signup />} />
           <Route
             path="account"
             element={
