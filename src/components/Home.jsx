@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div>
       <h1 className="text-center text-4xl font-bold">
-        <fieldset>Firebase Auth</fieldset>
+        Firebase-Auth
       </h1>
       <p className="py-2">
         Don't have an account yet?
